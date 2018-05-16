@@ -89,7 +89,7 @@ hr{
  }
 .banner .mask{
     height: 515px;
-    background-color: rgba(0,0, 0, 0.75);
+    background-color: rgba(0,0, 0, 0.8);
 }
 .usercard{
     max-width: 940px;
@@ -168,8 +168,7 @@ hr{
     width: 30px;
     height: 30px;
     fill: white;
-    margin: 0px 20px;
-    vertical-align: top;
+    vertical-align: middle;
 }
 .usercard .socialaccounts a{
     display: inline-block;
