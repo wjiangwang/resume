@@ -17,6 +17,12 @@ hr{
     border: none;
     border-top: 1px solid #dedede;
 }
+ul,ol {
+    list-style: none;
+}
+h1,h2,h3,h4,h5 {
+    font-weight: normal;
+}
 .clearfix::after{
     content: '';
     display: block;
@@ -86,16 +92,21 @@ hr{
      background-position: center center;
      background-size: cover;
      
+     
  }
 .banner .mask{
     height: 515px;
     background-color: rgba(0,0, 0, 0.8);
 }
 .usercard{
-    max-width: 940px;
+    max-width: 930px;
     margin-left: auto;
     margin-right: auto;
     background-color: #ffffff;
+    margin-top: -340px;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.49);
+    
+    
 }
 .picture {
     width: 295px;
@@ -145,7 +156,7 @@ hr{
     margin: 20px 0px;
 }
 .usercard .pictureandtext{
-    padding: 57px 50px 50px 50px;
+    padding: 57px 30px 50px 30px;
 }
 .usercard dl dt{
     float: left;
@@ -158,6 +169,7 @@ hr{
     width: 70%;
     padding: 6px 0px;
     color: #9da0a7;
+    
 
 }
 .usercard .socialaccounts{
@@ -182,3 +194,162 @@ hr{
 .usercard .socialaccounts a:hover{
     background: #cf5d5f;
 }
+.downloadresume{
+    font-size: 15px;
+    padding: 21px 55px;
+    margin: 5px 5px;
+    line-height: 16px;
+    border: 1px solid #cbcdcf;
+    display: inline-block;
+    background: #efefef;
+    border-radius: 3px;
+    color: #3d4451;
+    font-weight: bold;
+    transition: box-shadow 0.4s;
+}
+.downloadresumewrapper{
+    text-align:center;
+    margin: 25px;
+}
+.downloadresume:hover{
+    box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.2);
+}
+.self-introduction{
+    max-width: 930px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.portfolio,
+.skills{
+    max-width: 930px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 70px;
+}
+.portfolio>h2,
+.skills>h2{
+    margin-bottom: 25px;
+    color: #3d4451;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 600;
+    text-align: center;
+}
+.skills h3{
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 15px;
+
+}
+.skills>ol{
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.49);
+    background-color: #fff;
+    padding: 40px 35px 50px 35px;
+
+}
+.skills .progressBar1{
+    width: 400px;
+    height: 5px;
+    border-radius: 3px;
+    background: rgba(232,103,107,0.5);
+    margin-bottom: 40px;
+}
+.skills .progressBar2{
+    width: 400px;
+    height: 5px;
+    border-radius: 3px;
+    background: rgba(232,103,107,0.5);
+
+}
+.skills .progress {
+    width: 280px;
+    height: 5px;
+    border-radius: 3px;
+    background: #e8676b;  
+}
+.skills>ol>li{
+    float: left;
+}
+.progressBarpadding{
+    padding: 0px 15px;
+}
+.portfolio{
+    text-align: center;
+}
+.portfolio li{
+    font-size: 13px;
+    font-weight: 600;
+    float: left;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.portfolio li:nth-child(1){
+    margin-left: 0;
+}
+.portfolio ol{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+}
+.portfolio nav{
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+.portfolio .bar{
+    height: 5px;
+    border-radius: 3px;
+    background:#fff;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+}
+.portfolio .bar-inner.status-1 {
+    height: 100%;
+    width: 25px;
+    border-radius: 3px;
+    background: #e8676b;
+    transition: 0.5s;    
+}
+.portfolio .bar-inner.status-2 {
+    height: 100%;
+    margin-left: 64px;
+    width: 31px;
+    border-radius: 3px;
+    background: #e8676b;
+    transition:  0.5s; 
+}
+.portfolio .bar-inner.status-3 {
+    height: 100%;
+    margin-left: 130px;
+    width: 41px;
+    border-radius: 3px;
+    background: #e8676b;
+    transition:  0.5s; 
+}
+.works{
+    position: relative;
+    height: 576px;
+    margin-bottom: 100px;
+}
+.works .big{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.works .small-1{
+    position: absolute;
+    top: 0px;
+    left: 634px;
+}
+.works .small-2{
+    position: absolute;
+    top: 298px;
+    left: 634px;
+}
+.works img{
+    box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.69);
+}
+
+
