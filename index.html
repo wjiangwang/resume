@@ -28,11 +28,11 @@
             bottom: 0;
             margin: auto;
             background: black;
-            animation: s 1s linear infinite;
+            animation: s 1.5s linear infinite;
         }
 
         .loading::after {
-            animation-delay: 0.5s;
+            animation-delay: 0.75s;
         }
 
         @keyframes s {
@@ -296,7 +296,9 @@
 
 
     <script>
-        sitewelcome.classList.remove('active')
+        setTimeout(function(){
+            sitewelcome.classList.remove('active')
+        } ,2500)
     </script>
 </body>
 
