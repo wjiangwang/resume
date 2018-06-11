@@ -33,7 +33,7 @@ h1,h2,h3,h4,h5 {
     padding-right: 16px;
 
 }
-.top-nav-bar{
+.top_nav_bar{
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 0px;
@@ -42,48 +42,97 @@ h1,h2,h3,h4,h5 {
     top: 0px;
     left: 0px;
     width: 100%;
+    transition: all 0.5s;
+    z-index: 1;
+    color:#C7C6C7;
 }
-.top-nav-bar nav{
+.top_nav_bar.move{
+    background:#fff;
+    padding: 10px 0px;
+    box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.49);
+    color: #3c4350;
+
+
+}
+.top_nav_bar nav{
     float: right;
-    padding-top:6px ;
+    padding-top:5px ;
     padding-bottom: 2px;
 }
-.top-nav-bar a{
+.top_nav_bar a{
     float: left;
 }
-.top-nav-bar nav>ul{
+.top_nav_bar nav>ul{
     list-style-type: none; margin: 0; padding: 0;
  }
-.top-nav-bar nav>ul>li{
+.top_nav_bar nav>ul>li{
     float: left;
     margin-left: 17px;
     margin-right: 17px;
+    position: relative;
  }
- .top-nav-bar nav>ul>li>a{
+ .top_nav_bar nav>ul>li>a{
      font-size: 12px;
-     color:#C7C6C7;
+     color:inherit;
      font-weight: bold;
      border-top: 3px solid transparent;
      border-bottom: 3px solid transparent;
      padding-top: 5px;
      padding-bottom: 5px;
      display: block;
-     
+     position: relative;
  }
- .top-nav-bar nav>ul>li>a:hover{
-     border-bottom: 3px solid #e06567
+ .top_nav_bar nav>ul>li.active>a::after{
+     content: '';
+     display: block;
+     top: 100%;
+     position: absolute;
+     left: 0;
+     width: 100%;
+     height: 3px;
+     background:  #e06567;
+     animation: menuSlide 0.5s; 
+    
  }
- .top-nav-bar .logo {
+ @keyframes menuSlide {
+     0%{width: 0;}
+     100%{width: 100%;}
+ }
+ .top_nav_bar .submenu{
+     cursor: pointer;
+     top: 100%;
+     display: none;
+     right: 0;
+     background: white;
+     color:#3d4451;
+     box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.5);
+ }
+ .top_nav_bar li.active .submenu{
+     display: block;
+     position: absolute;
+     animation: submenuSlide 0.3s;
+
+ }
+
+ @keyframes submenuSlide{
+     0%{margin-right: 100%;}
+     100%{margin-right: 0;}
+ }
+ .top_nav_bar .submenu>li{
+     white-space: nowrap;
+     padding: 5px 15px;
+ }
+ .top_nav_bar .logo {
      font-size: 24px;
      font-family: "Arial Black";
      padding-top: 4px;
      padding-bottom: 3px;
  }
- .top-nav-bar .logo .rs{
+ .top_nav_bar .logo .rs{
      margin-right: 4px;
      color: #e6686a
  }
- .top-nav-bar .logo .card{
+ .top_nav_bar .logo .card{
      color: #9a9da2;
  }
  .banner{
@@ -225,7 +274,7 @@ h1,h2,h3,h4,h5 {
     max-width: 930px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 70px;
+    margin-top: 70px;
 }
 .portfolio>h2,
 .skills>h2{
