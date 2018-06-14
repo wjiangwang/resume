@@ -82,7 +82,8 @@ h1,h2,h3,h4,h5 {
      display: block;
      position: relative;
  }
- .top_nav_bar nav>ul>li.active>a::after{
+ .top_nav_bar nav>ul>li.active>a::after,
+ .top_nav_bar nav>ul>li.highLight>a::after{
      content: '';
      display: block;
      top: 100%;
@@ -303,12 +304,14 @@ h1,h2,h3,h4,h5 {
     border-radius: 3px;
     background: rgba(232,103,107,0.5);
     margin-bottom: 40px;
+    overflow: hidden;
 }
 .skills .progressBar2{
     width: 400px;
     height: 5px;
     border-radius: 3px;
     background: rgba(232,103,107,0.5);
+    overflow: hidden;
 
 }
 .skills .progress {
@@ -316,6 +319,13 @@ h1,h2,h3,h4,h5 {
     height: 5px;
     border-radius: 3px;
     background: #e8676b;  
+    transform: translateX(0);
+    transition: all 2.5s;
+}
+
+.skills.offSet .progress{
+    transform: translateX(-100%)
+
 }
 .skills>ol>li{
     float: left;
@@ -400,6 +410,12 @@ h1,h2,h3,h4,h5 {
 .works img{
     box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.69);
 }
-
+[data-x].offSet{
+    transform: translateY(120px);
+}
+[data-x]{
+    transform: translateY(0px);
+    transition: all 0.5s;
+}
 
 
