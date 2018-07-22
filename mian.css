@@ -270,6 +270,9 @@ h1,h2,h3,h4,h5 {
     margin-right: auto;
     text-align: center;
 }
+.portfolio{
+    margin-bottom: 70px;
+}
 .portfolio,
 .skills{
     max-width: 930px;
@@ -418,4 +421,8 @@ h1,h2,h3,h4,h5 {
     transition: all 0.5s;
 }
 
+.swiper-container {
+    width: 600px;
+    height: 400px;
+}
 
