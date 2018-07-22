@@ -10,74 +10,7 @@
     <link rel="stylesheet" href="./mian.css">
     <script src="//at.alicdn.com/t/font_669347_3jxub8x8dye6d2t9.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.js"></script>
-    <style type="text/css">
-        .loading {
-            height: 200px;
-            width: 200px;
-            position: relative;
-        }
-
-        .loading::before,
-        .loading::after {
-            content: '';
-            height: 0px;
-            width: 0px;
-            border: 1px solid black;
-            border-radius: 50%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-            background: black;
-            animation: s 1.5s linear infinite;
-        }
-
-        .loading::after {
-            animation-delay: 0.75s;
-        }
-
-        @keyframes s {
-            0% {
-                width: 0;
-                height: 0;
-                opacity: 1;
-            }
-            100% {
-                width: 100px;
-                height: 100px;
-                opacity: 0;
-            }
-        }
-
-        .icon {
-            width: 1em;
-            height: 1em;
-            vertical-align: -0.15em;
-            fill: currentColor;
-            overflow: hidden;
-        }
-
-        .site-welcome {
-            display: none;
-            position: fixed;
-            left: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-            background: whitesmoke;
-            z-index: 2;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .site-welcome.active {
-            display: flex;
-        }
-    </style>
 </head>
-
 <body>
     <div id='sitewelcome' class="site-welcome active">
         <div class="loading"></div>
@@ -254,39 +187,6 @@
     </section>
     <section data-x id='siteWorks' class="portfolio">
         <h2>作品集</h2>
-        <!--<nav>
-            <ol class="clearfix">
-                <li id="portfolio1">所有</li>
-                <li id="portfolio2">框架</li>
-                <li id="portfolio3">原生JS</li>
-            </ol>
-            <div class="bar">
-                <div id="portfoliobar" class="bar-inner status-1">
-                </div>
-            </div>
-            <script>
-                portfolio1.onclick = function () {
-                    portfoliobar.className = 'bar-inner status-1'
-                }
-                portfolio2.onclick = function () {
-                    portfoliobar.className = 'bar-inner status-2'
-                }
-                portfolio3.onclick = function () {
-                    portfoliobar.className = 'bar-inner status-3'
-                }
-            </script>
-        </nav>
-        <div class="works">
-            <div class="big">
-                <img src="./img/1.jpg" alt="所有">
-            </div>
-            <div class="small-1">
-                <img src="./img/2.jpg" alt="框架">
-            </div>
-            <div class="small-2">
-                <img src="./img/3.jpg" alt="原生">
-            </div>
-        </div> -->
         <div class="swiper-container">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
