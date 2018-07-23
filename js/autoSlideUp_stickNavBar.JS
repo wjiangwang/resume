@@ -30,7 +30,6 @@ let specialTags = document.querySelectorAll('[data-x]')
             min.classList.remove('offSet')
             let minId = min.id
             let a = document.querySelector('a[href="#' + minId + '"]')
-            console.log(a)
             let li = a.parentNode
             let brotherLi = li.parentNode.children
             for (let i = 0; i < brotherLi.length; i++) { brotherLi[i].classList.remove('highLight') }

@@ -342,6 +342,7 @@ h1,h2,h3,h4,h5 {
     margin-bottom: 70px;
 }
 .portfolio,
+.message,
 .skills{
     max-width: 930px;
     margin-left: auto;
@@ -349,7 +350,8 @@ h1,h2,h3,h4,h5 {
     margin-top: 70px;
 }
 .portfolio>h2,
-.skills>h2{
+.skills>h2,
+.message>h2{
     margin-bottom: 25px;
     color: #3d4451;
     font-size: 34px;
@@ -410,5 +412,20 @@ h1,h2,h3,h4,h5 {
 .portfolio .swiper-container {
     width: 600px;
     height: 400px;
+    z-index: 0;
 }
+#messageList{
+    background-color: whitesmoke;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.49);
+    padding: 40px 35px 50px 35px;
+    margin-bottom: 50px;
 
+}
+#messageList>li{
+    padding: 16px;
+    border-bottom:1px solid #DEE0DF;
+}
+#postMessageForm{
+    text-align: center;
+    margin-bottom: 50px;
+}

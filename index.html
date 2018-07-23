@@ -203,13 +203,27 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </div>
-
     </section>
+    <section class='message'>
+        <h2>留言板</h2>
+        <div class='mm'>
+            <ol id="messageList"></ol>
+            <form id='postMessageForm'>
+                <label>姓名</labe>
+                <input id=messageName type="text">
+                <label>留言内容</labe>
+                <input id=messageInput type="text">
+                <input type="submit" value="提交">
+            </form>
+        </div>
+    </section>
+    <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.9.0/dist/av-min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.3.5/Tween.min.js"></script>
     <script src="./js/autoSlideUp_stickNavBar.JS"></script>
     <script src="./js/smoothly-navigation.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/swiper.js"></script>
+    <script src="./js/message.js"></script>
 </body>
 
 </html>
