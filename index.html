@@ -11,6 +11,7 @@
     <script src="//at.alicdn.com/t/font_669347_3jxub8x8dye6d2t9.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.js"></script>
 </head>
+
 <body>
     <div id='sitewelcome' class="site-welcome active">
         <div class="loading"></div>
@@ -202,113 +203,13 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </div>
-        
+
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.3.5/Tween.min.js"></script>
-    <script>
-
-        let specialTags = document.querySelectorAll('[data-x]')
-        for (let i = 0; i < specialTags.length; i++) {
-            specialTags[i].classList.add('offSet')
-        }
-        setTimeout(function () {
-            sitewelcome.classList.remove('active')
-        }, 1200)
-        setTimeout(function () { findClosest() }, 1300);
-
-        window.onscroll = function () {
-            if (window.scrollY > 0) {
-                top_nav_bar.classList.add('move')
-            } else {
-                top_nav_bar.classList.remove('move')
-            }
-            findClosest()
-        }
-        function findClosest() {
-            let scrollTop = window.scrollY
-            let specialTags = document.querySelectorAll('[data-x]')
-            let min = specialTags[0]
-            for (let i = 0; i < specialTags.length; i++) {
-                let top = specialTags[i].offsetTop
-                if (Math.abs(top - scrollTop) < Math.abs(min.offsetTop - scrollTop)) { min = specialTags[i] }
-            }
-            min.classList.remove('offSet')
-            let minId = min.id
-            let a = document.querySelector('a[href="#' + minId + '"]')
-            console.log(a)
-            let li = a.parentNode
-            let brotherLi = li.parentNode.children
-            for (let i = 0; i < brotherLi.length; i++) { brotherLi[i].classList.remove('highLight') }
-            li.classList.add('highLight')
-
-        }
-        let liTags = document.querySelectorAll('nav.menu>ul>li')
-        for (i = 0; i < liTags.length; i++) {
-            liTags[i].onmouseenter = function (x) {
-                x.currentTarget.classList.add('active')
-            }
-            liTags[i].onmouseleave = function (x) {
-                x.currentTarget.classList.remove('active')
-            }
-        }
-        function animate(time) {
-            requestAnimationFrame(animate);
-            TWEEN.update(time);
-        }
-        requestAnimationFrame(animate);
-        let aTags = document.querySelectorAll('nav.menu>ul>li>a')
-        for (let i = 0; i < aTags.length; i++) {
-            aTags[i].onclick = function (x) {
-                x.preventDefault()
-                let a = x.currentTarget
-                let href = a.getAttribute('href')
-                let element = document.querySelector(href)
-                let top = element.offsetTop
-                let currentTop = window.scrollY//当前高度
-                let targetTop = top - 70;//目标高度
-                let t = Math.abs((targetTop - currentTop))
-                if (t > 700) { t = 700 }
-                var coords = { y: currentTop };
-                var tween = new TWEEN.Tween(coords)
-                    .to({ y: targetTop }, t)
-                    .easing(TWEEN.Easing.Quadratic.InOut)
-                    .onUpdate(function () {
-                        window.scrollTo(0, coords.y)
-                    })
-                    .start();
-
-
-            }
-
-        }
-
-    </script>
-
-
-
-    <script>
-        var mySwiper = new Swiper('.swiper-container', {
-            // Optional parameters
-            direction: 'horizontal',
-            loop: true,
-
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-            },
-
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-
-            // And if we need scrollbar
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
-        })
-    </script>
+    <script src="./js/autoSlideUp_stickNavBar.JS"></script>
+    <script src="./js/smoothly-navigation.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/swiper.js"></script>
 </body>
 
 </html>
