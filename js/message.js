@@ -35,6 +35,8 @@
     loadMessages: function() {
       this.moldel.fetch().then(
         function(todos) {
+          console.log(todos)
+          todos.reverse()
           todos.forEach(function(todo) {
             let li = document.createElement("li");
             messageList.appendChild(li);
@@ -62,7 +64,7 @@
       if (connect) {
         this.moldel.save(connectName, connect).then(function(object) {
           let li = document.createElement("li");
-          messageList.appendChild(li);
+          messageList.insertBefore(li,messageList.firstChild);
           li.innerHTML = `${object.attributes.name}:${
             object.attributes.message
           }`;

@@ -8,6 +8,7 @@
     <title>王卫江个人简历</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.css">
     <link rel="stylesheet" href="./mian.css">
+    <link rel="stylesheet" href="./timeline.css">
     <script src="//at.alicdn.com/t/font_669347_3jxub8x8dye6d2t9.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.js"></script>
 </head>
@@ -19,8 +20,8 @@
     <div id='top_nav_bar' class="top_nav_bar">
         <div class="top-nav-bar-inner clearfix">
             <a class="logo" href="#" alt="logo">
-                <span class="rs">RS</span>
-                <span class="card">card</span>
+                <span class="rs">w</span>
+                <span class="card">wj</span>
             </a>
             <nav class="menu">
                 <ul class="clearfix">
@@ -39,22 +40,20 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#">日历</a>
+                        <a href="#education">经历</a>
                     </li>
                     <li>
-                        <a href="#">博客</a>
-                        <ul class="submenu">
-                            <li>作品1</li>
-                            <li>作品2</li>
-                            <li>作品3</li>
-                        </ul>
+                        <a href="#message">留言板</a>
                     </li>
                     <li>
                         <a href="#">联系方式</a>
+                        <ul class="submenu">
+                                <li>手机:17721292945</li>
+                                <li>邮箱：wjiang.wang@foxmail.com</li>
+                                <li>微信：664027523</li>
+                            </ul>
                     </li>
-                    <li>
-                        <a href="#">其他</a>
-                    </li>
+
                 </ul>
             </nav>
         </div>
@@ -71,11 +70,11 @@
                     <img src="./img/avatar.jpg" alt="头像">
                 </div>
                 <div class="text">
-                    <span class="welcome">Hello
+                    <span class="welcome">您好，这是我的前端求职简历
                         <span class="triangle"></span>
                     </span>
                     <h1>王卫江</h1>
-                    <p>前端开发工程师</p>
+                    <p>前端开发，熟悉HTML5/css3/javaScript</p>
                     <hr>
                     <dl>
                         <dt>年龄</dt>
@@ -114,10 +113,7 @@
             <a class="downloadresume" href="./resume.pdf" target="_blank" download=>下载PDF简历</a>
         </p>
 
-        <p class="self-introduction">
-            我是王卫江。。。
-            <br> 技能：。。
-        </p>
+
 
 
     </main>
@@ -128,6 +124,7 @@
                 <div class="progressBarpadding">
                     <h3>HTML5 & CSS3
                     </h3>
+                    <p>熟悉HTML5/css3/,可以xxxxxxx</p>
                     <div class="progressBar1">
                         <div class="progress">
                         </div>
@@ -138,6 +135,7 @@
                 <div class="progressBarpadding">
                     <h3>javaScript
                     </h3>
+                    <p>xxxx</p>
                     <div class="progressBar1">
                         <div class="progress" style="width:100px;">
                         </div>
@@ -148,6 +146,7 @@
                 <div class="progressBarpadding">
                     <h3>jQuery
                     </h3>
+                    <p>xxxx</p>
                     <div class="progressBar1">
                         <div class="progress" style="width:160px;">
                         </div>
@@ -158,6 +157,7 @@
                 <div class="progressBarpadding">
                     <h3>Vue
                     </h3>
+                    <p>xxxx</p>
                     <div class="progressBar1">
                         <div class="progress" style="width:220px;">
                         </div>
@@ -168,6 +168,7 @@
                 <div class="progressBarpadding">
                     <h3>React
                     </h3>
+                    <p>xxxx</p>
                     <div class="progressBar2">
                         <div class="progress" style="width:90px;">
                         </div>
@@ -178,6 +179,7 @@
                 <div class="progressBarpadding">
                     <h3>HTTP
                     </h3>
+                    <p>xxxx</p>
                     <div class="progressBar2">
                         <div class="progress" style="width:180px;">
                         </div>
@@ -188,31 +190,108 @@
     </section>
     <section data-x id='siteWorks' class="portfolio">
         <h2>作品集</h2>
-        <div class="swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <img src="./works/works_BookMask.jpg" class="swiper-slide">
-                <img src="./works/works_canvas.jpg" class="swiper-slide">
-                <img src="./works/works_slide.jpg" class="swiper-slide">
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+        <div class=works-wrapper>
+            <ol>
+                <li>
+                    <div class='img'>
+                        <img src="./works/works_BookMask.jpg">
+                    </div>
+                    <p class='keyword'>键盘导航</p>
+                    <div class="link">
+                        <a href="#">预览</a>
+                        <a href="#">源码</a>
+                    </div>
+                    <hr>
+                    <p class='description'>描述</p>
+                </li>
+                <li>
+                    <div class='img'>
+                        <img src="./works/works_canvas.jpg">
+                    </div>
+                    <p class='keyword'>我的画板</p>
+                    <div class="link">
+                        <a href="#">预览链接</a>
+                        <a href="#">源码链接</a>
+                    </div>
+                    <hr>
+                    <p class='description'>描述</p>
+                </li>
+                <li>
+                    <div class='img'>
+                        <img src="./works/works_slide.jpg">
+                    </div>
+                    <p class='keyword'>无缝轮播</p>
+                    <div class="link">
+                        <a href="#">预览链接</a>
+                        <a href="#">源码链接</a>
+                    </div>
+                    <hr>
+                    <p class='description'>描述</p>
+                </li>
+                <li>
+                    <div class='img'>
+                        <img src="./works/works_slide.jpg">
+                    </div>
+                    <p class='keyword'>仿云音乐</p>
+                    <div class="link">
+                        <a href="#">预览链接</a>
+                        <a href="#">源码链接</a>
+                    </div>
+                    <hr>
+                    <p class='description'>描述</p>
+                </li>
+            </ol>
         </div>
     </section>
-    <section class='message'>
+    <section data-x id='education' class='education'>
+        <h2>教育学习经历</h2>
+        <div class="timeline">
+            <div class="lineBar"></div>
+            <div class=wapper>
+                <div class="work left">
+                    <span class="dot"></span>
+                    <div class="work-inner left">
+                        <span class="arrow"></span>
+                        <div class="date">2013-9-1</div>
+                        <h3>xxxxxxxxxxxxxxxx</h3>
+                    </div>
+                </div>
+                <div class="work right">
+                    <span class="dot"></span>
+                    <div class="work-inner right">
+                        <span class="arrow"></span>
+                        <div class="date">2013-9-1</div>
+                        <h3>xxxxxxxxxxxxxxxx</h3>
+                    </div>
+                </div>
+                <div class="work left" style="position: absolute;top:175px;left:0;right:auto;">
+                    <span class="dot"></span>
+                    <div class="work-inner left">
+                        <span class="arrow"></span>
+                        <div class="date">2013-9-1</div>
+                        <h3>xxxxxxxxxxxxxxxx</h3>
+                    </div>
+                </div>
+                <div class="work right" style="position: absolute;top:225px;right:0;left:auto;">
+                    <span class="dot" style="margin-left: -4px"></span>
+                    <div class="work-inner right">
+                        <span class="arrow"></span>
+                        <div class="date">2013-9-1</div>
+                        <h3>xxxxxxxxxxxxxxxx</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section  data-x id='message' class='message'>
         <h2>留言板</h2>
-        <div class='mm'>
-            <ol id="messageList"></ol>
-            <form id='postMessageForm'>
+        <form id='postMessageForm'>
                 <input id=messageName type="text" placeholder='姓名'>
                 <input id=messageInput type="text" placeholder='留言内容'>
                 <input id='inputButton' type="submit" value="提交">
             </form>
+        <div class='mm'>
+            <ol id="messageList"></ol>
         </div>
     </section>
     <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.9.0/dist/av-min.js"></script>
@@ -220,8 +299,10 @@
     <script src="./js/autoSlideUp_stickNavBar.JS"></script>
     <script src="./js/smoothly-navigation.js"></script>
     <script src="./js/main.js"></script>
-    <script src="./js/swiper.js"></script>
     <script src="./js/message.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./js/scrollreveal.js"></script>
+
 </body>
 
 </html>
