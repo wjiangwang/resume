@@ -15,4 +15,21 @@
       });
   })
   
+  let scrollName2=['left','right']
+  scrollName2.map((name)=>{
+    sr.reveal('.'+name,{
+      origin: name,
+      opacity: 0.8,
+        delay: 300,
+        reset: true,
+        distance: "100px",
+        duration: 1000,
+        afterReveal: function(el) {
+          let className = document.getElementsByClassName(name);
+          sr.clean('.'+name)//只动画一次
+        }
+      });
+    })
+ 
+  
 }
