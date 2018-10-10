@@ -1,5 +1,7 @@
 body{
     background: #efefef;
+    font: 16px Helvetica,Arial,sans-serif;
+    line-height: 1.62;
     
     margin: 0;
   }
@@ -210,7 +212,7 @@ img{width: 100%;}
  }
  .banner{
      height: 515px;
-     background-image: url(../img/rs-cover-2-2-1-1.jpg);
+     background-image: url(../img/banner.jpeg);
      background-position: center center;
      background-size: cover;
      
@@ -218,7 +220,7 @@ img{width: 100%;}
  }
 .banner .mask{
     height: 515px;
-    background-color: rgba(44, 51, 64, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 .usercard{
     max-width: 930px;
@@ -235,8 +237,7 @@ img{width: 100%;}
     height: 324px;
 }
 .picture img{
-    width: 295px;
-    height: 324px;
+ 
 }
 
 .usercard .welcome{
@@ -464,6 +465,7 @@ img{width: 100%;}
 .portfolio ol>li .link{
     padding-top: 20px;
     display: flex;
+    position: relative;
 }
 .portfolio ol>li .link a{
     margin: 0 10px;
@@ -476,7 +478,13 @@ img{width: 100%;}
 .portfolio ol>li .link a:hover{
     background-color: #E6E6E6;
 }
-
+.portfolio ol>li .link>img{
+    display: none;
+    position: absolute;
+    top: -200px;
+    left: 100px;
+    width: 150px;
+}
 .portfolio hr{
     height: 3px;
     border-radius: 2px;
@@ -498,9 +506,10 @@ img{width: 100%;}
     right: 8px;
 }
 .portfolio .description{
-    text-align-last: left;
+    text-align: left;
     padding-bottom: 20px;
     padding-left: 20px;
+    color: #4d4d4d;
 }
 
 

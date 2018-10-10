@@ -1,4 +1,11 @@
-//模拟加载圆圈
-setTimeout(function() {
+//加载效果
+window.onload=function(){
   sitewelcome.classList.remove("active");
-}, 1200);
+}
+//预览二维码
+$(".preview1").hover(function(){
+  $(".QRCode1").show();
+},function(){$(".QRCode1").hide();})
+$(".preview2").hover(function(){
+  $(".QRCode2").show();
+},function(){$(".QRCode2").hide();})
