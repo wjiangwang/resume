@@ -25,7 +25,6 @@
     view: null,
     moldel: null,
     init: function(view, moldel) {
-      console.log(this);
       this.moldel = moldel;
       this.view = view;
       this.moldel.AVinit();
@@ -35,7 +34,6 @@
     loadMessages: function() {
       this.moldel.fetch().then(
         function(todos) {
-          console.log(todos)
           todos.reverse()
           todos.forEach(function(todo) {
             let li = document.createElement("li");

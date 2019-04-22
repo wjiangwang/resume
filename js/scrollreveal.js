@@ -4,7 +4,7 @@
   scrollName.map((name)=>{
     sr.reveal(name,{
         delay: 300,
-        reset: true,
+        reset: false,
         distance: "150px",
         duration: 1000,
         afterReveal: function(el) {
@@ -21,7 +21,7 @@
       origin: name,
       opacity: 0.8,
         delay: 300,
-        reset: true,
+        reset: false,
         distance: "100px",
         duration: 1000,
         afterReveal: function(el) {

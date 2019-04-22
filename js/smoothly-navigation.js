@@ -8,10 +8,10 @@ let liTags = document.querySelectorAll('nav.menu>ul>li')
             }
         }
         function animate(time) {
-            requestAnimationFrame(animate);
-            TWEEN.update(time);
+            requestAnimationFrame(animate)
+            TWEEN.update(time)
         }
-        requestAnimationFrame(animate);
+        requestAnimationFrame(animate)
         let aTags = document.querySelectorAll('nav.menu>ul>li>a')
         for (let i = 0; i < aTags.length; i++) {
             aTags[i].onclick = function (x) {
@@ -24,7 +24,7 @@ let liTags = document.querySelectorAll('nav.menu>ul>li')
                 let targetTop = top - 70;//目标高度
                 let t = Math.abs((targetTop - currentTop))
                 if (t > 700) { t = 700 }
-                var coords = { y: currentTop };
+                var coords = { y: currentTop }
                 var tween = new TWEEN.Tween(coords)
                     .to({ y: targetTop }, t)
                     .easing(TWEEN.Easing.Quadratic.InOut)
@@ -32,8 +32,5 @@ let liTags = document.querySelectorAll('nav.menu>ul>li')
                         window.scrollTo(0, coords.y)
                     })
                     .start();
-
-
             }
-
         }

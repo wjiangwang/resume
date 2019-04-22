@@ -1,6 +1,6 @@
 //加载效果
 window.onload=function(){
-  sitewelcome.classList.remove("active");
+  sitewelcome.classList.remove("active")
 }
 //预览二维码
 $(".preview1").hover(function(){
